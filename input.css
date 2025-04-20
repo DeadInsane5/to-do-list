@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 0.15rem solid #1e293b; /* slate-800 */
+    border-radius: 1rem; /* rounded-2xl */
+}
+.delete-task{
+    padding: 0.5rem;
+    background-color: #f87171; /* red-400 */
+    border-radius: 1rem; /* rounded-2xl */
+    cursor: pointer;
+}
