@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link href="./input.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
     <title>Document</title>
 </head>
-
 <body>
-    <div class="container w-screen flex flex-col items-center">
-        <div class="input w-4/12 flex justify-center">
-            <div class="input">
-                <input type="text" name="task-input" id="task-input" placeholder="Enter a task"
-                    class="border-2 border-gray-300 rounded-2xl p-3 m-2">
-                <button type="submit" id="add-task" class="p-3 m-2 bg-blue-400 rounded-2xl">Add task</button>
-                <button id="speech-btn" class="p-3 m-2 bg-green-400 rounded-2xl">Speak</button>
+    <div class="container">
+        <div class="input-section">
+            <div class="input-container">
+                <input type="text" name="task-input" id="task-input" placeholder="Enter a task">
+                <button type="submit" id="add-task">Add task</button>
+                <button id="speech-btn">Speak</button>
             </div>
         </div>
-        <ul id="task-list" class="w-4/12 flex flex-col justify-evenly align-top">
+        <ul id="task-list">
             <li>
                 Task1
-                <button class="delete-task">Delete</button>
+                <button id="delete-task">Delete</button>
             </li>
-
         </ul>
     </div>
     <script src="main.js" defer></script>
 </body>
-
 </html>

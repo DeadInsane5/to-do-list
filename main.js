@@ -3,7 +3,7 @@ $("#add-task").on("click", function () {
     const taskText = $("#task-input").val();
     if (taskText) {
         const taskItem = $("<li>").text(taskText);
-        const deleteButton = $("<button>").text("Delete").addClass("delete-task");
+        const deleteButton = $("<button>").text("Delete").attr("id", "delete-task");
         taskItem.append(deleteButton);
         $("#task-list").append(taskItem);
         $("#task-input").val("");
@@ -11,7 +11,7 @@ $("#add-task").on("click", function () {
 });
 
 // deleteTask
-$("#task-list").on("click", ".delete-task", function () {
+$("#task-list").on("click", "#delete-task", function () {
     $(this).parent().remove();
 });
 
