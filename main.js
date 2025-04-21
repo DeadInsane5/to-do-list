@@ -31,7 +31,7 @@ $("#speech-btn").on("click", function () {
 
     recognition.onresult = function (event) {
         const speechResult = event.results[0][0].transcript;
-        fetch('http://localhost:3000/process-speech', {
+        fetch('http://192.168.0.107:8080/process-speech', {
             method: 'POST',
             headers: { 'Content-Type': application / json },
             body: JSON.stringify({ text: speechResult })
