@@ -43,6 +43,13 @@ body {
     font-size: 0.8rem;
 }
 
+/* Loading message */
+#loading {
+    color: rgb(59, 130, 246);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
 /* Input field */
 #task-input {
     border: 2px solid rgb(209, 213, 219);
@@ -67,12 +74,12 @@ body {
 }
 
 #add-task {
-    background-color: rgb(96, 165, 250);
+    background-color: #60a5fa;
     color: white;
 }
 
 #speech-btn {
-    background-color: rgb(74, 222, 128);
+    background-color: #4ade80;
     color: white;
 }
 
