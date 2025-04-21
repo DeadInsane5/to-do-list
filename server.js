@@ -20,7 +20,7 @@ app.post('/process-speech', async (req, res) => {
 
     try {
         const prompt = `Return a todo list of tasks extracted from ${text}, return a JSON array of tasks as a raw JSON string, without Markdown or code blocks.`;
-        const response = await axios.post('http://localhost:11434/api/generate', {
+        const response = await axios.post('http://192.168.0.107:8080/api/generate', {
             model: 'gemma3:1b',
             prompt,
             stream: false
