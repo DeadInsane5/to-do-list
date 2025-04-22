@@ -1,8 +1,15 @@
+:root{
+  --cat-work : #49c2ef;
+  --cat-personal : #43d960;
+  --cat-health : #f679e3;
+  --cat-finance : #f9fe77;
+  --cat-social : #b427e9;
+}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* Container */
@@ -104,7 +111,57 @@ li {
     border: 0.15rem solid #1e293b;
     border-radius: 1rem;
 }
+.cat-work {
+  border-left: 0.5rem solid var(--cat-work);
+}
+.cat-personal {
+  border-left: 0.5rem solid var(--cat-personal);
+}
+.cat-health {
+  border-left: 0.5rem solid var(--cat-health);
+}
+.cat-finance {
+  border-left: 0.5rem solid var(--cat-finance);
+}
+.cat-social {
+  border-left: 0.5rem solid var(--cat-social);
+}
 
+.category-menu {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.category-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.category-menu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.category-menu li:hover {
+    background: #f0f0f0;
+}
+
+/* Optional: Style for task items */
+#task-list li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Example category styles (optional) */
+/* .cat-work { background: #e3f2fd; } */
+/* .cat-personal { background: #e8f5e9; } */
+/* .cat-health { background: #fff3e0; } */
+/* .cat-finance { background: #fce4ec; } */
+/* .cat-social { background: #f3e5f5; } */
 
 /* Responsive design */
 @media (max-width: 768px) {
